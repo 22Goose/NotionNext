@@ -1,6 +1,6 @@
 // import LazyImage from '@/components/LazyImage'
 import Link from 'next/link'
-// import CONFIG from '../config'
+import CONFIG from '../config'
 import SocialButton from './SocialButton'
 import { siteConfig } from '@/lib/config'
 
@@ -18,7 +18,8 @@ export default function Header (props) {
                     {/* 可使用一张单图作为logo */}
                     <div className='flex space-x-6'>
                         <div className='flex-col flex justify-center'>
-                            <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{siteConfig('AUTHOR')}</div>
+                        <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{siteConfig('AUTHOR')}</div>
+                            <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center' dangerouslySetInnerHTML={{ __html: siteConfig('SIMPLE_LOGO_DESCRIPTION', null, CONFIG) }} />
                         </div>
                     </div>
                 </Link>
