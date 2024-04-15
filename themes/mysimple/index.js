@@ -91,7 +91,7 @@ const LayoutBase = props => {
           className={
             (JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE'))
               ? 'flex-row-reverse'
-              : '') + ' w-full flex-1 flex items-start max-w-9/10 mx-auto pt-12'
+              : '') + ' w-full flex-1 flex items-start max-w-9/10 mx-auto pt-2'
           }>
           <div id='container-inner ' className='w-full flex-grow min-h-fit'>
             <Transition
