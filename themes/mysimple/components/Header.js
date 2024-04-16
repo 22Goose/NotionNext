@@ -18,7 +18,7 @@ export default function Header (props) {
                     {/* 可使用一张单图作为logo */}
                     <div className='flex space-x-6 justify-center items-center'>
                         <div className='flex-col flex justify-center'>
-                            <div className='text-2xl font-serif dark:text-white py-1  '>{siteConfig('AUTHOR')}</div>
+                            <div className='text-2xl font-serif dark:text-white py-1  '>{siteConfig('AUTHOR')}  Blog</div>
                         </div>
                         {/* Social Media Link Button */}
                         <div className='flex justify-center'>
