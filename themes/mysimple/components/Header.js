@@ -13,7 +13,7 @@ export default function Header (props) {
 
   return (
         <header className="flex justify-start item-center px-6 bg-white h-16 dark:bg-black relative z-10">
-            <div className="float-none inline-block py-3">
+            <div className="float-none inline-block py-3 pl-12">
                 <Link href='/'>
                     {/* 可使用一张单图作为logo */}
                     <div className='flex space-x-6 justify-center items-center'>
